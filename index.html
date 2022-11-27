@@ -245,6 +245,20 @@ ul li:hover {
     height: 100px;
 }
 
+
+
+.btn {
+ padding: 2px 5px;
+ background: #cbb403;
+ color: #111111;
+ border-bottom: solid 5px gray;
+ border-radius: 4px;
+}
+.btn:active {
+ -webkit-transform: translateY(5px);
+ transform: translateY(5px);
+ border-bottom: none;
+}
     </style>
 </head>
 <body>
@@ -254,11 +268,18 @@ ul li:hover {
     <div id="map">
 
       <div id="header">
-        <ul><li><a href="#"  onclick="toggleSidebar('left')" >表示位置指定</a></li>
+        <ul>
+        <li><button type="button" onclick="toggleSidebar('left')" class="btn">表示位置指定</button></li>
+        <li><button type="button" onclick="toggleSidebar('left')" class="btn">データシート指定</button></li>
+        <li><button type="button" onclick="toggleSidebar('right')" class="btn">表示情報指定</button></li>
+        <li><button type="button" onclick="toggleSidebar('right')" class="btn">表示地図指定</button></li>
+        <!--
+        <li><a href="#"  onclick="toggleSidebar('left')" >表示位置指定</a></li>
         <li><a href="#"   onclick="toggleSidebar('left')">データシート指定</a></li>
   
         <li><a href="#"   onclick="toggleSidebar('right')"  >表示情報選択</a></li>
         <li><a href="#"  onclick="toggleSidebar('right')"  >表示地図指定</a></li>
+        -->
       </ul>
     </div>
 
